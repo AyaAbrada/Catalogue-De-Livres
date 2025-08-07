@@ -12,8 +12,8 @@ public class Author {
     private String name;
     private String biography;
 
-    @OneToMany(mappedBy = "author")
-    private List<Book> books;
+    //@OneToMany(mappedBy = "author")
+    //private List<Book> books;
 
     public Author(){}
 
@@ -21,16 +21,16 @@ public class Author {
         this.id = id;
         this.name = name;
         this.biography = biography;
-        this.books = books;
+        //this.books = books;
     }
 
-    public List<Book> getBooks() {
-        return books;
-    }
+    //public List<Book> getBooks() {
+     //   return books;
+    //}
 
-    public void setBooks(List<Book> books) {
-        this.books = books;
-    }
+    //public void setBooks(List<Book> books) {
+//        this.books = books;
+   // }
 
     public String getName() {
         return name;

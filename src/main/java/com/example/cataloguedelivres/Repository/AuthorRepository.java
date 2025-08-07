@@ -10,4 +10,6 @@ public interface AuthorRepository extends JpaRepository<Author, Long> {
 
     @Query(value = "select * from author where name like A%" , nativeQuery = true)
     List<Author> CommenceParLettre ();
+
+
 }

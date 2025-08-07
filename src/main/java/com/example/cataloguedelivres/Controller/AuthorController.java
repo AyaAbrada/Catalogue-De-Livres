@@ -31,5 +31,10 @@ public class AuthorController {
     }
 
 
+    @DeleteMapping("/{id}")
+    public void deleteBook(Long id){
+        authorService.deleteAuthor(id);
+    }
+
 
 }
